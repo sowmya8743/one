@@ -17,7 +17,7 @@
 
 		
 		<dependency>
-			<groupId>org. junit. jupiter</groupId>
+			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter</artifactId>
 			<version>5.10.0</version>
 			<scope>test</scope>
@@ -35,19 +35,14 @@
                 <target>17</target>
             </configuration>
         </plugin>
+	<plugin>
+	      <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-surefire-plugin</artifactId>
+              <version>3.1.2</version>
+	</plugin>
     </plugins>
 </build>
-<build>
-    <plugins>
-         <plugin>
-	    <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.1.2</version>
-         </plugin>
-	<plugins>
-</build>
-	
-	<distributionManagement>
+    <distributionManagement>
 		 <snapshotRepository>
 		    <id>nexusRepo</id>
 		    <url>http://3.108.190.102:8081/repository:flm-releases/</url>
